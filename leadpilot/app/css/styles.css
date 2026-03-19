@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    color: #334155;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-bar {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.filter-bar label {
+    font-weight: 600;
+    color: #475569;
+    margin-right: 12px;
+    font-size: 1rem;
+}
+
+#priority-filter {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    min-width: 220px;
+}
+
+#priority-filter:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.table-container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background: #f1f5f9;
+    padding: 18px;
+    text-align: left;
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+tbody td {
+    padding: 18px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.lead-name {
+    color: #3b82f6;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lead-name:hover {
+    text-decoration: underline;
+}
+
+.score-cell {
+    position: relative;
+}
+
+.score {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.hot .score { color: #dc2626; }
+.warm .score { color: #f59e0b; }
+.cold .score { color: #0ea5e9; }
+
+.priority {
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+}
+
+.hot .priority {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.warm .priority {
+    background: #fffbeb;
+    color: #f59e0b;
+}
+
+.cold .priority {
+    background: #eff6ff;
+    color: #0ea5e9;
+}
+
+.loading {
+    text-align: center;
+    padding: 50px;
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Tooltip – Always on Right Side (No Left Side) */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+/* Default: Tooltip on right side */
+.tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    background: #1e293b;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    white-space: pre-line;
+    width: 360px;
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.tooltip:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-right-color: #1e293b;
+}
+
+/* Only flip to left if absolutely no space on right (very rare) */
+.tooltip.flip:hover::after {
+    left: auto;
+    right: 110%;
+}
+
+.tooltip.flip:hover::before {
+    left: auto;
+    right: 100%;
+    border-right-color: transparent;
+    border-left-color: #1e293b;
+}

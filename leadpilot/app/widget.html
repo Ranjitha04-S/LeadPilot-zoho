@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadPilot - Lead Scores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://live.zwidgets.com/js-sdk/1.0.5/ZohoEmbededAppSDK.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Lead Scores</h1>
+
+        <!-- Filter Dropdown -->
+        <div class="filter-bar">
+            <label for="priority-filter">Filter by Priority:</label>
+            <select id="priority-filter">
+                <option value="all">All Leads</option>
+                <option value="hot">🔥 Hot (80+)</option>
+                <option value="warm">🙂 Warm (60–79)</option>
+                <option value="cold">❄️ Cold (0–59)</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Lead Name</th>
+                        <th>Company</th>
+                        <th>Score</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-tbody">
+                    <tr>
+                        <td colspan="4" class="loading">Loading leads...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

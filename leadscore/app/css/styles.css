@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: transparent;
+    color: #334155;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.score-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+#calculate-btn {
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+}
+
+#calculate-btn:hover {
+    background: #2563eb;
+}
+
+#calculate-btn:active {
+    transform: translateY(1px);
+}
+
+.score-display {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.score-big {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.hot { color: #dc2626; }
+.warm { color: #f59e0b; }
+.cold { color: #0ea5e9; }
+
+.label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 16px 0 32px;
+}
+
+.progress {
+    height: 14px;
+    background: #e2e8f0;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 32px 0;
+}
+
+.fill {
+    height: 100%;
+    transition: width 1.2s ease;
+}
+
+.fill.hot { background: #dc2626; }
+.fill.warm { background: #f59e0b; }
+.fill.cold { background: #0ea5e9; }
+
+.breakdown {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.breakdown h3 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #475569;
+    font-size: 1.1rem;
+}
+
+.factor {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.95rem;
+}
+
+.factor:last-child {
+    border-bottom: none;
+}
+
+.positive {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    font-style: italic;
+}
