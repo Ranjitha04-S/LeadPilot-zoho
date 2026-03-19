@@ -1,4 +1,4 @@
-# 🚀 LeadPilot — Smart Lead Scoring for Zoho CRM
+# LeadPilot — Smart Lead Scoring for Zoho CRM
 
 > A lead scoring solution built natively inside Zoho CRM using Widgets — no backend, no external servers.
 
@@ -24,27 +24,27 @@ Sales teams in Zoho CRM handle a large number of leads daily. Without a prioriti
 
 ## ✨ Features
 
-- 📊 **Home Page Dashboard** — Auto-evaluates recent leads with scores, priority badges, and filter options
-- 🔍 **Score Breakdown Tooltip** — Hover to see how each score was calculated
-- 🏷️ **Priority Categories** — Hot (pursue now), Warm (nurture), Cold (follow up later)
-- 📋 **In-Record Popup Widget** — Scoring button inside individual lead pages with detailed factor breakdown
-- ⚡ **Real-Time Recalculation** — Score updates instantly when lead data changes
-- 🔄 **Dashboard Sync** — Updated scores reflect across both dashboard and individual lead views
+- **Home Page Dashboard** — Auto-evaluates recent leads with scores, priority badges, and filter options
+- **Score Breakdown Tooltip** — Hover to see how each score was calculated
+- **Priority Categories** — Hot (pursue now), Warm (nurture), Cold (follow up later)
+- **In-Record Popup Widget** — Scoring button inside individual lead pages with detailed factor breakdown
+- **Real-Time Recalculation** — Score updates instantly when lead data changes
+- **Dashboard Sync** — Updated scores reflect across both dashboard and individual lead views
 
 ---
 
-## 🧮 Six-Factor Scoring System
+## Six-Factor Scoring System
 
 LeadPilot evaluates each lead using 6 core factors. The final score is capped at **100**.
 
 | Factor | What It Measures |
 |---|---|
-| 🏢 **Company Fit** | Employees, revenue & industry relevance |
-| 📣 **Buying Signals** | Engagement and intent indicators |
-| 👔 **Decision-Maker Access** | Lead role and authority level |
-| ⏱️ **Timing** | Budget availability and urgency |
-| 🤝 **Trust Source** | Lead source credibility |
-| 🌍 **Geography** | Location-based market relevance |
+| **Company Fit** | Employees, revenue & industry relevance |
+| **Buying Signals** | Engagement and intent indicators |
+| **Decision-Maker Access** | Lead role and authority level |
+| **Timing** | Budget availability and urgency |
+| **Trust Source** | Lead source credibility |
+| **Geography** | Location-based market relevance |
 
 > **Note:** Industry Bonus is shown separately in the UI for transparency, but it is a sub-component of Company Fit — not a standalone factor.
 
@@ -62,7 +62,7 @@ LeadPilot evaluates each lead using 6 core factors. The final score is capped at
 
 ---
 
-## 🏗 Why Zoho CRM Widgets?
+## Why Zoho CRM Widgets?
 
 LeadPilot runs **completely inside Zoho CRM** and interacts directly with the Leads module. Zoho CRM Widgets allow fetching live lead data using the Zoho JS SDK and displaying results within the CRM interface — making it ideal for:
 
@@ -89,7 +89,7 @@ LeadPilot-zoho/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone this repo
 2. Open [Zoho CRM Developer Console](https://marketplace.zoho.com/developer)
@@ -100,13 +100,9 @@ LeadPilot-zoho/
 
 ---
 
-## 🏆 Built For
+## Built For
 
 **Zoho Developer Community Hackathon**
 Submitted under the CRM Widgets category.
 
----
 
-## 👩‍💻 Author
-
-**Ranjitha S** — [@Ranjitha04-S](https://github.com/Ranjitha04-S)
