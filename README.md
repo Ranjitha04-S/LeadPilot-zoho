@@ -89,17 +89,6 @@ LeadPilot-zoho/
 
 ---
 
-## How to Run
-
-1. Clone this repo
-2. Open [Zoho CRM Developer Console](https://marketplace.zoho.com/developer)
-3. Create a new Widget project
-4. Upload the widget files
-5. Deploy to your Zoho CRM sandbox
-6. Open CRM → Leads module to see LeadPilot in action
-
----
-
 ## Built For
 
 **Zoho Developer Community Hackathon**
